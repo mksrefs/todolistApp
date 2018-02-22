@@ -39,6 +39,16 @@ public class ApplicationController {
     @Autowired
     private RelationListTaskService relationListTaskService;
     
+    
+    /**
+     * ログイン画面
+     * @return
+     */
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index(){
+        return "index";
+    }
+    
     /**
      * トップ画面
      * @param model
